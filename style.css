@@ -64,8 +64,24 @@ body {
 
 /* Main start */
 .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1440px;
-  margin: 0 a;
+  margin: 0 auto;
+}
+.portfolio {
+  max-width: 15pc;
+  padding: 0 20px;
+  font-size: 1em;
+  font-weight: 100;
+}
+.aside {
+  margin-left: 20px;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000;
 }
 /* Main end */
 
@@ -90,6 +106,9 @@ body {
 }
 .footer_link:hover {
   opacity: 1;
+}
+.footer_item p {
+  opacity: .5;
 }
 .rss_logo {
   height: 30px;

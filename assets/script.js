@@ -2,8 +2,8 @@
 // let listItems = document.querySelectorAll('.header_link');
 // console.log(listItems);
 
-// document.addEventListener('mouseenter', function() {
+// listItems.addEventListener('mouseover', function() {
 //   listItems.forEach(link => {
-//     link.classList.add('header_link-active')
+//     link.classList.add('header_link-active ')
 //   })
 // });
