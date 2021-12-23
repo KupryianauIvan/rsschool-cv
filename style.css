@@ -1,9 +1,75 @@
-.greetings {
-  text-align: center;
-  font-size: 2.5em;
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto/Roboto-Black.ttf");
 }
-.subtitle {
-  border: 1px solid #000;
-  font-size: 2em;
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  background-color: #f3f2ef;
+}
+
+/* Header start */
+.header {
+  background-color: #FFF;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+.header_item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
 }
+.header_item-svg {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  font-size: 1.5em;
+}
+.header_link {
+  position: relative;
+  padding: 0 20px;
+  line-height: 1.5em;
+  color: #000;
+  opacity: .5;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: .3s;
+}
+.header_link-active {
+  opacity: 1;
+}
+.header_link:hover {
+  opacity: 1;
+}
+/* Header end */
+
+/* Main start */
+.container {
+  max-width: 1440px;
+  margin: 0 a;
+}
+/* Main end */
+
+/* Footer start */
+.footer {
+  background-color: #FFF;
+}
+/* Footer end */
