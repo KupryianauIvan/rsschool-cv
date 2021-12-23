@@ -1,0 +1,9 @@
+.greetings {
+  text-align: center;
+  font-size: 2.5em;
+}
+.subtitle {
+  border: 1px solid #000;
+  font-size: 2em;
+  text-align: center;
+}
