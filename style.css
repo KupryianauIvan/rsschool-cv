@@ -28,7 +28,7 @@ body {
 .list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
 }
 .header_item {
@@ -72,10 +72,19 @@ body {
   margin: 0 auto;
 }
 .portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   max-width: 15pc;
   padding: 0 20px;
   font-size: 1em;
   font-weight: 100;
+}
+.portfolio img {
+  width: 75%;
+}
+.portfolio__about_me {
+  opacity: .6;
 }
 .aside {
   margin-left: 20px;
