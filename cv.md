@@ -28,3 +28,13 @@ Hello, i'm Ivan from Belarus and i'm 24 years old. I like to explore something n
     return str.toLowerCase().split('').sort().join('')
   }
 ```
+##Job Experience:
+I'll add some projects to this section later...
+##Education:
+  - BSUIR 2017 - 2021 Bachelor (POiT)
+  - MCB 2013 - 2017 Special (POiT)
+  - [HTMLAcademy](https://htmlacademy.ru/study)- all simulators
+  - [FreeCodeCamp](https://www.freecodecamp.org/) 
+    - Responsive Web Design
+    - JavaScript Algorithms and Data Structures
+##English Level - according to the Epam test is A2+.
