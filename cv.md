@@ -38,4 +38,5 @@ I'll add some projects to this section later...
   - [FreeCodeCamp](https://www.freecodecamp.org/) 
     - Responsive Web Design
     - JavaScript Algorithms and Data Structures
+    
 ## English Level - according to the Epam test is A2+.
