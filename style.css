@@ -127,16 +127,19 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 5px #000;
 }
-.section-contacts {
+.section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 50pc;
+  width: 50pc;
   margin-left: 20px;
   padding: 20px;
   background-color: #FFF;
   border-radius: 10px;
   box-shadow: 0 0 5px #000;
+}
+.section-contacts {
+  display: none;
 }
 .section_contacts-about {
   margin-bottom: 30px;
@@ -161,10 +164,51 @@ body {
 }
 .section-skills {
   display: none;
+  text-align: center;
 }
+.skills_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.skills_item {
+  list-style: none;
+}
+.skills_link {
+  font-size: 5em;
+  opacity: 1;
+}
+.skills_link-html {
+  color: #e54c21;
+}
+.skills_link-css {
+  color: #33a9dc;
+}
+.skills_link-js {
+  color: #f16528;
+}
+.skills_link-git {
+  color: #3f2c00;
+}
+
+
 .section-code {
-  display: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);;
+  grid-gap: 20px;
 }
+.grid_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(23,23,25, 0.5);
+}
+.grid_title {
+  color: #ecb613;
+}
+
 .section-courses {
   display: none;
 }
