@@ -1,7 +1,24 @@
 @font-face {
-  font-family: Roboto;
-  src: url("assets/fonts/Roboto/Roboto-Black.ttf");
+  font-family: 'Roboto';
+  src: url("assets/fonts/Roboto/Roboto-Thin.ttf");
+  font-weight: 100;
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url("assets/fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("assets/fonts/Roboto/Roboto-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +32,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
   background-color: #f3f2ef;
@@ -66,31 +83,99 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: nowrap;
   max-width: 1440px;
+  height: auto;
   margin: 0 auto;
 }
 .portfolio {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 15pc;
+  max-width: 50pc;
   padding: 0 20px;
   font-size: 1em;
   font-weight: 100;
 }
+.portfolio_title {
+  font-weight: 500;
+  font-size: 2em;
+}
+.portfolio_subtitle {
+  font-weight: 300;
+  font-size: 1em;
+}
 .portfolio img {
-  width: 75%;
+  width: 100%;
 }
 .portfolio__about_me {
   opacity: .6;
 }
 .aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-left: 20px;
   background-color: #FFF;
   border-radius: 10px;
   box-shadow: 0 0 5px #000;
+}
+.about_me {
+  margin-left: 20px;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000;
+}
+.section-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50pc;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000;
+}
+.section_contacts-about {
+  margin-bottom: 30px;
+}
+.contacts_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contacts_list_item{
+  padding: 20px;
+  list-style: none;
+  transition: .3s;
+}
+.contacts_list_item:hover{
+  cursor: pointer;
+  background-color: gainsboro;
+}
+.contacts_list_link {
+  text-decoration: none;
+  color: #000;
+}
+.section-skills {
+  display: none;
+}
+.section-code {
+  display: none;
+}
+.section-courses {
+  display: none;
+}
+.section-projects {
+  display: none;
+}
+.section-education{
+  display: none;
+}
+.aside-english {
+  display: none;
 }
 /* Main end */
 
