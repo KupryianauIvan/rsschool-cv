@@ -150,6 +150,9 @@ body {
   box-shadow: 0 0 5px #000;
 }
 .section-contacts {
+  display: none;
+}
+.section-contacts-active {
   display: flex;
 }
 .section_contacts-about {
@@ -176,6 +179,9 @@ body {
 .section-skills {
   display: none;
   text-align: center;
+}
+.section-skills-active {
+  display: flex;
 }
 .skills_menu {
   display: flex;
@@ -204,8 +210,14 @@ body {
 .section-code {
   display: none;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);;
+  grid-template-rows: repeat(3, 1fr);;
   grid-gap: 20px;
+}
+.section-code h3 {
+  grid-column: 1 / 4;
+}
+.section-code-active {
+  display: grid;
 }
 .grid_item {
   display: flex;
@@ -262,6 +274,9 @@ body {
 .section-courses {
   display: none;
 }
+.section-courses-active {
+  display: block;
+}
 .courses_item {
   list-style: none;
   transition: .3s;
@@ -291,7 +306,10 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-section h3 {
+.section-projects-active {
+  display: flex;
+}
+section h3:not('grid_title') {
   width: 100%;
   text-align: center;
   border-bottom: 1px solid #000;
@@ -311,10 +329,13 @@ section h3 {
 .project_link:hover {
   transform: scale(1.5);
 }
-.section-education{
+.section-education {
   display: none;
-  justify-content: space-around;
+  justify-content: center;
   align-items: left;
+}
+.section-education-active {
+  display: flex;
 }
 .study_link {
   color: #000;
@@ -328,6 +349,9 @@ section h3 {
 .section-english {
   display: none;
   justify-content: space-between;
+}
+.section-english-active {
+  display: flex;
 }
 .english_container {
   display: flex;
