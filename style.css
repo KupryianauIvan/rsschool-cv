@@ -340,6 +340,22 @@ section h3 {
 }
 .section-english {
   display: flex;
+  justify-content: space-between;
+}
+.english_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.english_item {
+  max-width: 450px;
+  width: 100%;
+}
+.english_link {
+  transition: .3s;
+}
+.english_link:hover {
+  transform: scale(1.1);
 }
 /* Main end */
 
