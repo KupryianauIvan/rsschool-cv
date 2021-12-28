@@ -208,6 +208,69 @@ body {
 .grid_title {
   color: #ecb613;
 }
+.grid_link {
+  position: relative;
+  margin-left: 10px;
+  color: #ecb613;
+  text-decoration: none;
+  opacity: 0;
+  transition: .5s;
+}
+.grid_link:hover {
+  opacity: 1;
+}
+.modal_container {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal_container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal {
+  padding: 10px;
+  width: 600px;
+  max-width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  text-align: left;
+}
+.modal_close {
+  color: #000;
+  text-decoration: none;
+}
+/* .grid_link::before {
+  content: "<i class="fas fa-terminal"></i>";
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  width: 10px;
+  height: 2px;
+  transform: skewY(-30deg);
+  background-color: #ecb613;
+}
+.grid_link::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 70px;
+  width: 10px;
+  height: 2px;
+  transform: skewY(30deg);
+  background-color: #ecb613;
+} */
 
 .section-courses {
   display: none;
