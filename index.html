@@ -5,10 +5,391 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/highlight/styles/github.min.css">
   <title>That's my CV</title>
 </head>
 <body>
-  <h1 class="greetings">Hello Everyone</h1>
-  <p class="subtitle">Here'll be my HTML/CSS CV</p>
+  <header class="header">
+    <nav class="header_nav">
+      <ul class="list header-list">
+        <li class="header_item">
+          <a href="#about_me" class="header_link" id="header_link-1">
+            <div class="header_item-svg">
+              <i class="fas fa-male"></i>
+            </div>
+            <span class="svg_subtitle">
+              about me
+            </span>
+          </a>
+        </li>
+        <li class="header_item">
+          <a href="#skills" class="header_link" id="header_link-2">
+            <div class="header_item-svg">
+              <i class="fab fa-linode"></i>
+            </div>
+            <span class="svg_subtitle">
+              skills
+            </span>
+          </a>
+        </li>
+        <li class="header_item">
+          <a href="#code" class="header_link" id="header_link-3">
+            <div class="header_item-svg">
+              <i class="fas fa-code"></i>
+            </div>
+            <span class="svg_subtitle">
+              code
+            </span>
+          </a>
+        </li>
+        <li class="header_item">
+          <a href="#courses" class="header_link" id="header_link-4">
+            <div class="header_item-svg">
+              <i class="fab fa-free-code-camp"></i>
+            </div>
+            <span class="svg_subtitle">
+              courses
+            </span>
+          </a>
+        </li>
+        <li class="header_item">
+          <a href="#projects" class="header_link" id="header_link-5">
+            <div class="header_item-svg">
+              <i class="fas fa-hamsa"></i>
+            </div>
+            <span class="svg_subtitle">
+              projects
+            </span>
+          </a>
+        </li>
+        <li class="header_item">
+          <a href="#education" class="header_link" id="header_link-6">
+            <div class="header_item-svg">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <span class="svg_subtitle">
+              education
+            </span>
+          </a>
+        </li>
+        <li class="header_item">
+          <a href="#english" class="header_link" id="header_link-7">
+            <div class="header_item-svg">
+              <i class="fas fa-language"></i>
+            </div>
+            <span class="svg_subtitle">
+              english
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="container">
+      <aside class="aside aside-about_me" id="about_me">
+        <div class="portfolio">
+          <img src="assets/img/myImage.png" alt="my_photo">
+          <h1 class="portfolio_title">
+            Ivan Kupryianau
+          </h1>
+         <p class="portfolio_subtitle">I'm a Beginner Front-End Developer</p>
+        </div>
+      </aside>
+
+      <section class="section section-contacts" id="contacts">
+        <h3>About</h3>
+        <p class="section_contacts-about">
+          Hello, I’m from Belarus and I’m 24 years old and also I'm a Beginner Front-End Developer. I like to explore something new and interesting for me to find the thing which I’ll fell in love. As a developer I have only few student works, for example: rss_chat (I’ve made it for my diploma by YouTube guides), workplace automation which was made in 1C. 
+        </p>
+        <ul class="contacts_menu">
+          <li class="contacts_list_item">
+            <a class="contacts_list_link" href="https://www.linkedin.com/in/ivan-kupryianau-206286223/">
+              LinkedIn
+            </a>
+          </li>
+          <li class="contacts_list_item">
+            <a class="contacts_list_link" href="https://github.com/KupryianauIvan">
+              gitHub
+            </a>
+          </li>
+          <li class="contacts_list_item">
+            <a class="contacts_list_link" href="@Kupriyanau_Ivan">
+              Discord
+            </a>
+          </li>
+          <li class="contacts_list_item">
+            <a class="contacts_list_link" href="https://t.me/stalker_ivan">
+              Telegram
+            </a>
+          </li>
+        </ul>
+      </section>
+      
+      <section class="section section-skills" id="skills">
+        <h2>Skills Section:</h2>
+        <ul class="skills_menu">
+          <li class="skills_item">
+            <a href="#" class="skills_link skills_link-html">
+              <i class="fab fa-html5"></i>
+            </a>
+          </li>
+          <li class="skills_item">
+            <a href="#" class="skills_link skills_link-css">
+              <i class="fab fa-css3"></i>
+            </a>
+          </li>
+          <li class="skills_item">
+            <a href="#" class="skills_link skills_link-js">
+              <i class="fab fa-node-js"></i>
+            </a>
+          </li>
+          <li class="skills_item">
+            <a href="#" class="skills_link skills_link-git">
+              <i class="fab fa-git"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section section-code" id="code">
+        <h3>Code examples:</h3>
+        <div class="grid_item grid_item-1">
+          <h3 class="grid_title">Anagram Detection</h3>
+          <a class="grid_link grid_link-1" id="grid_link-1" href="#">
+            <i class="fas fa-terminal"></i> Click me
+          </a>
+          <div class="modal_container modal_container-1" id="modal_container-1">
+            <div class="modal">
+              <a class="modal_close" href="#" id="modal_close-1"> Close </a>
+              <pre>
+                <code class="javascript">
+                  function isAnagram(test, original) {
+                    if (test.length !== original.length) {
+                      return false
+                    }
+                    
+                    return sortedString(test) === sortedString(original);
+                  }
+                
+                  function sortedString(str) {
+                    return str.toLowerCase().split('').sort().join('')
+                  }
+                </code>
+              </pre>
+            </div>
+        </div>
+        </div>
+        <div class="grid_item grid_item-2">
+          <h3 class="grid_title">Head, Tail, Init and Last</h3>
+          <a class="grid_link grid_link-2" id="grid_link-2" href="#">
+            <i class="fas fa-terminal"></i> Click me
+          </a>
+          <div class="modal_container modal_container-2" id="modal_container-2">
+            <div class="modal">
+              <a class="modal_close" href="#" id="modal_close-2"> Close </a>
+              <pre>
+                <code class="javascript">
+                  function head(array) {
+                    return array.slice(0, 1).shift()
+                  }
+                  
+                  function tail(array) {
+                    return array.slice(1)
+                  }
+                  
+                  function init(array) {
+                    return array.slice(0, -1)
+                  }
+                  
+                  function last(array) {
+                    return array.slice(0).pop()
+                  }
+                </code>
+              </pre>
+            </div>
+        </div>
+        </div>
+        <div class="grid_item grid_item-3">
+          <h3 class="grid_title">Digits explosion</h3>
+          <a class="grid_link grid_link-3" id="grid_link-3" href="#">
+            <i class="fas fa-terminal"></i> Click me
+          </a>
+          <div class="modal_container modal_container-3" id="modal_container-3">
+            <div class="modal">
+              <a class="modal_close" href="#" id="modal_close-3"> Close </a>
+              <pre>
+                <code class="javascript">
+                  function explode(s) {
+                    return s.split('').map((item) => item.repeat(+item)).join('')
+                  }
+                </code>
+              </pre>
+            </div>
+        </div>
+        </div>
+        <div class="grid_item grid_item-4">
+          <h3 class="grid_title">Absent vowel</h3>
+          <a class="grid_link grid_link-4" id="grid_link-4" href="#">
+            <i class="fas fa-terminal"></i> Click me
+          </a>
+          <div class="modal_container modal_container-4" id="modal_container-4">
+            <div class="modal">
+              <a class="modal_close" href="#" id="modal_close-4"> Close </a>
+              <pre>
+                <code class="javascript">
+                  function absentVowel(x){
+                    return ['a', 'e', 'i', 'o', 'u'].findIndex(item => !x.includes(item));
+                  }
+                </code>
+              </pre>
+            </div>
+        </div>
+        </div>
+        <div class="grid_item grid_item-5">
+          <h3 class="grid_title">Isograms</h3>
+          <a class="grid_link grid_link-5" id="grid_link-5" href="#">
+            <i class="fas fa-terminal"></i> Click me
+          </a>
+          <div class="modal_container modal_container-5" id="modal_container-5">
+            <div class="modal">
+              <a class="modal_close" href="#" id="modal_close-5"> Close </a>
+              <pre>
+                <code class="javascript">
+                  function isIsogram(str){
+                    if (str === '') return true;
+                    
+                    let lowerCaseString = str.toLowerCase();
+                    
+                    for (let i = 0; i &lt;= lowerCaseString.length; i++) {
+                      for (let j = i + 1; j &lt;= lowerCaseString.length; j++) {
+                        if (lowerCaseString[j] == lowerCaseString[i]) {
+                          return false;
+                        }
+                      }
+                    }
+                    return true;
+                  }
+                </code>
+              </pre>
+            </div>
+        </div>
+        </div>
+        <div class="grid_item grid_item-6">
+          <h3 class="grid_title">Disemvowel Trolls</h3>
+          <a class="grid_link grid_link-6" id="grid_link-6" href="#">
+            <i class="fas fa-terminal"></i> Click me
+          </a>
+          <div class="modal_container modal_container-6" id="modal_container-6">
+            <div class="modal">
+              <a class="modal_close" href="#" id="modal_close-6"> Close </a>
+              <pre>
+                <code class="javascript">
+                  function disemvowel(str) {
+                    let re = /[aeiou]/gi
+                    
+                    return str.replace(re, '')
+                  }
+                </code>
+              </pre>
+            </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="section section-courses" id="courses">
+        <h3>Courses List</h3>
+        <ul class="courses_menu">
+          <li class="courses_item">
+            <a href="https://ru.code-basics.com/" class="courses_link">ru.code-basics.com</a>
+            <ul class="courses_submenu">
+              <li class="courses_subitem">
+                <a href="https://ru.code-basics.com/languages/html" class="courses_sublink">HTML for Begginers</a>
+              </li>
+              <li class="courses_subitem">
+                <a href="https://ru.code-basics.com/languages/javascript" class="courses_sublink">JavaScript for Begginers</a>
+              </li>
+              <li class="courses_subitem">
+                <a href="https://ru.code-basics.com/languages/css" class="courses_sublink">CSS for Begginers</a>
+              </li>
+            </ul>
+          </li>
+          <li class="courses_item">
+            <a href="https://htmlacademy.ru/courses" class="courses_link">HTML_Academy</a>
+          </li>
+          <li class="courses_item">
+            <a href="https://www.freecodecamp.org/" class="courses_link">freeCodeCamp</a>
+            <ul class="courses_submenu">
+              <li class="courses_subitem">
+                <a href="https://www.freecodecamp.org/learn/responsive-web-design/" class="courses_sublink">Responsive Web Design</a>
+              </li>
+              <li class="courses_subitem">
+                <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" class="courses_sublink">JavaScript Algorithms and Data Structures</a>
+              </li>
+            </ul>
+          </li>
+          <li class="courses_item">
+            <a href="https://www.a1qa.by/education/kurs-osnovy-testirovaniya-po" class="courses_link">A1QA QA Engineer Beginner</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section section-projects" id="projects">
+        <h3>There will be my future projects:</h3>
+        <div class="project_container">
+          <h4 class="project_title">My CV</h4>
+          <a href="https://github.com/KupryianauIvan/rsschool-cv/tree/main" class="project_link">
+            <img class="project_image" src="assets/img/github.com_KupryianauIvan_rsschool-cv_tree_main.png" alt="project_CV">
+          </a>
+        </div>
+      </section>
+
+      <section class="section section-education" id="education">
+        <h3>My studies:</h3>
+        <ul class="studies_menu">
+          <li class="study_item">
+            <h4>Minsk College of business</h4>
+            <a href="http://mcb.by/specialnosti/it" class="study_link">Information Technology Software</a> from 2013 to 2017.
+          </li>
+          <li class="study_item">
+            <h4>Belarus State University of Information and Radioelectronics</h4>
+            <a href="https://iti.bsuir.by/" class="study_link">Software-Engineer</a> from 2017 to 2021.
+        </ul>
+      </section>
+
+      <section class="section section-english" id="english">
+        <h3>English Level:</h3>
+        <div class="english_container">
+          <a href="https://www.efset.org/cert/wpTdPb" class="english_link">
+            <img class="english_item" src="assets/img/esfet_cert.png" alt="EFSET">
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <ul class="list footer_list">
+      <li class="footer_item">
+        <a href="https://github.com/KupryianauIvan" class="footer_link">
+          <i class="fab fa-github-alt"> GitHub</i>
+        </a>
+      </li>
+      <li class="footer_item">
+        <p> Created in 2021 </p>
+      </li>
+      <li class="footer_item">
+        <a href="https://rs.school/index.html" class="footer_link">
+          <img class="rss_logo" src="assets/svg/rs_school_js.svg" alt="rss_logo">
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <script src="https://kit.fontawesome.com/e024017558.js" crossorigin="anonymous"></script>
+  <script src="./assets/modal_container.js"></script>
+  <script src="./assets/header_menu.js"></script>
+  <script src="./assets/header_menu.js"></script>
+  <script src="assets/highlight/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </body>
 </html>
